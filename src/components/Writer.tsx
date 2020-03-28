@@ -2,11 +2,23 @@ import React, { useState, useEffect } from "react";
 import TextareaAutosize from "react-textarea-autosize";
 import "./Writer.css";
 
-const InitialTimerValue = 2;
 const IgnoredCharacters = [8, 46, 32, 13];
 
+type TLevels = {
+  [key: string]: number;
+};
+
+const Levels: TLevels = {
+  Easy: 10,
+  Normal: 5,
+  Hard: 2,
+};
+
+const DefaultLevel = "Normal";
+
 const Writer: React.FC = () => {
-  const [count, setCount] = useState(InitialTimerValue);
+  const [level, setLevel] = useState(DefaultLevel);
+  const [count, setCount] = useState(Levels[DefaultLevel]);
   const [hasStarted, setHasStarted] = useState(false);
   const [hasEnded, setHasEnded] = useState(false);
 
@@ -34,11 +46,32 @@ const Writer: React.FC = () => {
       return;
     }
 
-    setCount(InitialTimerValue);
+    setCount(Levels[level]);
   };
 
   return (
     <div>
+      <div className="difficulty">
+        <div>Difficulty:</div>
+        <p
+          className={level === "Easy" ? "active" : ""}
+          onClick={(): void => setLevel("Easy")}
+        >
+          Easy (10s)
+        </p>
+        <p
+          className={level === "Normal" ? "active" : ""}
+          onClick={(): void => setLevel("Normal")}
+        >
+          Normal (5s)
+        </p>
+        <p
+          className={level === "Hard" ? "active" : ""}
+          onClick={(): void => setLevel("Hard")}
+        >
+          Hard (2s)
+        </p>
+      </div>
       {hasStarted && <p>Seconds left: {Number(count).toFixed(2)}</p>}
       {!hasStarted && <p>Begin writing something...</p>}
       {hasEnded && <h1>DIE!</h1>}

@@ -7,3 +7,26 @@
     margin-bottom: 20px;
     padding: 50px;
 }
+
+.active {
+    color: green;
+}
+
+.difficulty {
+    margin-top: 20px;
+    font-size: calc(10px + .8vmin);
+    background-color: #eee;
+    padding: 10px;
+}
+
+.difficulty div {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.difficulty p{
+    display:inline;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
