@@ -1,10 +1,9 @@
 .writer {
     width: 90%;
     background-color: transparent;
-    /* border-width: 0 0 1px 0; */
-    /* border-color: transparent transparent black transparent; */
-    /* border-width: 0 0 3px 0; */
-    border: none;
+    border-color:#eee;
+    border-width: 5px;
     font-size: calc(10px + 2vmin);
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    padding: 50px;
 }
