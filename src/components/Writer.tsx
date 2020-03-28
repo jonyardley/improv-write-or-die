@@ -30,7 +30,7 @@ const Writer: React.FC = () => {
       setHasStarted(true);
     }
 
-    if (IgnoredCharacters.indexOf(keyCode) != -1) {
+    if (IgnoredCharacters.indexOf(keyCode) !== -1) {
       return;
     }
 
