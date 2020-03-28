@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/improv-write-or-die/static/css/main.80c1bf45.chunk.css",
+    "main.js": "/improv-write-or-die/static/js/main.cc41b43a.chunk.js",
+    "main.js.map": "/improv-write-or-die/static/js/main.cc41b43a.chunk.js.map",
+    "runtime-main.js": "/improv-write-or-die/static/js/runtime-main.3956d4ec.js",
+    "runtime-main.js.map": "/improv-write-or-die/static/js/runtime-main.3956d4ec.js.map",
+    "static/js/2.7a600327.chunk.js": "/improv-write-or-die/static/js/2.7a600327.chunk.js",
+    "static/js/2.7a600327.chunk.js.map": "/improv-write-or-die/static/js/2.7a600327.chunk.js.map",
+    "index.html": "/improv-write-or-die/index.html",
+    "precache-manifest.2cf6d2699581918785c3fbc3d6264f59.js": "/improv-write-or-die/precache-manifest.2cf6d2699581918785c3fbc3d6264f59.js",
+    "service-worker.js": "/improv-write-or-die/service-worker.js",
+    "static/css/main.80c1bf45.chunk.css.map": "/improv-write-or-die/static/css/main.80c1bf45.chunk.css.map",
+    "static/js/2.7a600327.chunk.js.LICENSE.txt": "/improv-write-or-die/static/js/2.7a600327.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3956d4ec.js",
+    "static/js/2.7a600327.chunk.js",
+    "static/css/main.80c1bf45.chunk.css",
+    "static/js/main.cc41b43a.chunk.js"
+  ]
+}
