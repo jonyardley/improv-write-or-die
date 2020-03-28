@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffa9bf31afd6ed83531dda9451bf9282",
+    "revision": "d9ec781cbb3be96aac0dc0810a56d183",
     "url": "/improv-write-or-die/index.html"
   },
   {
