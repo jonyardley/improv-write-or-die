@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Writer from "./components/Writer";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <header className="app-body">
+        <h1>Write or Die!</h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Write a story and don't stop. After two seconds you die. Deleting
+          stuff doesn't count as writing so keep those ideas flowing.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <section>
+        <Writer />
+      </section>
     </div>
   );
-}
+};
 
 export default App;
