@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/improv-write-or-die/precache-manifest.437a54664b12a158440a909a79b3e251.js"
+  "/improv-write-or-die/precache-manifest.b49221ce2aca27f3666cb003f009f29b.js"
 );
 
 self.addEventListener('message', (event) => {
