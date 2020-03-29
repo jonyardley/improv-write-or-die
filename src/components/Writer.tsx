@@ -24,7 +24,7 @@ const Writer: React.FC = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const newCount = Math.round((count - 0.05) * 100) / 100;
+      const newCount = Math.round((count - 0.01) * 100) / 100;
 
       if (newCount === 0) {
         setHasEnded(true);
@@ -33,13 +33,14 @@ const Writer: React.FC = () => {
       if (hasStarted && !hasEnded) {
         setCount(newCount);
       }
-    }, 50);
+    }, 10);
     return (): void => clearInterval(interval);
-  }, [count, setCount, hasStarted, setHasStarted, hasEnded, setHasEnded]);
+  }, [count, setCount, hasStarted, hasEnded, setHasEnded]);
 
   const handleKeyUp = ({ keyCode }: React.KeyboardEvent): void => {
     if (!hasStarted) {
       setHasStarted(true);
+      setCount(Levels[level]);
     }
 
     if (IgnoredCharacters.indexOf(keyCode) !== -1) {
@@ -49,25 +50,38 @@ const Writer: React.FC = () => {
     setCount(Levels[level]);
   };
 
+  const moveCaretAtEnd = (e: any): void => {
+    const tempValue = e.target.value;
+    e.target.value = "";
+    e.target.value = tempValue;
+  };
+
+  const setDifficulty = (newLevel: string): void => {
+    if (!hasStarted) {
+      setLevel(newLevel);
+      setCount(Levels[level]);
+    }
+  };
+
   return (
     <div>
       <div className="difficulty">
         <div>Difficulty:</div>
         <p
           className={level === "Easy" ? "active" : ""}
-          onClick={(): void => setLevel("Easy")}
+          onClick={(): void => setDifficulty("Easy")}
         >
           Easy (10s)
         </p>
         <p
           className={level === "Normal" ? "active" : ""}
-          onClick={(): void => setLevel("Normal")}
+          onClick={(): void => setDifficulty("Normal")}
         >
           Normal (5s)
         </p>
         <p
           className={level === "Hard" ? "active" : ""}
-          onClick={(): void => setLevel("Hard")}
+          onClick={(): void => setDifficulty("Hard")}
         >
           Hard (2s)
         </p>
@@ -82,6 +96,7 @@ const Writer: React.FC = () => {
         onKeyUp={handleKeyUp}
         defaultValue="Once upon a time..."
         disabled={hasEnded}
+        onFocus={moveCaretAtEnd}
       />
 
       {hasEnded && (

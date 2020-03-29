@@ -9,7 +9,7 @@ const App: React.FC = () => {
       <header className="app-body">
         <h1>Write or Die!</h1>
         <p>
-          Write a story and don't stop. After two seconds of not typing, you
+          Write a story and don't stop. After a few seconds of not typing, you
           die.
         </p>
         <p>Deleting stuff doesn't count, so keep those ideas flowing.</p>
