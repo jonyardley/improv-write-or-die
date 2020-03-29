@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/improv-write-or-die/static/css/main.54236a13.chunk.css",
-    "main.js": "/improv-write-or-die/static/js/main.60494788.chunk.js",
-    "main.js.map": "/improv-write-or-die/static/js/main.60494788.chunk.js.map",
+    "main.js": "/improv-write-or-die/static/js/main.7b1b58d7.chunk.js",
+    "main.js.map": "/improv-write-or-die/static/js/main.7b1b58d7.chunk.js.map",
     "runtime-main.js": "/improv-write-or-die/static/js/runtime-main.3956d4ec.js",
     "runtime-main.js.map": "/improv-write-or-die/static/js/runtime-main.3956d4ec.js.map",
     "static/js/2.7a600327.chunk.js": "/improv-write-or-die/static/js/2.7a600327.chunk.js",
     "static/js/2.7a600327.chunk.js.map": "/improv-write-or-die/static/js/2.7a600327.chunk.js.map",
     "index.html": "/improv-write-or-die/index.html",
-    "precache-manifest.26db68f60c03d1af9e696e93edd5fdde.js": "/improv-write-or-die/precache-manifest.26db68f60c03d1af9e696e93edd5fdde.js",
+    "precache-manifest.97d2d7142f5ef58aa9ebc6cf8b9ccf31.js": "/improv-write-or-die/precache-manifest.97d2d7142f5ef58aa9ebc6cf8b9ccf31.js",
     "service-worker.js": "/improv-write-or-die/service-worker.js",
     "static/css/main.54236a13.chunk.css.map": "/improv-write-or-die/static/css/main.54236a13.chunk.css.map",
     "static/js/2.7a600327.chunk.js.LICENSE.txt": "/improv-write-or-die/static/js/2.7a600327.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3956d4ec.js",
     "static/js/2.7a600327.chunk.js",
     "static/css/main.54236a13.chunk.css",
-    "static/js/main.60494788.chunk.js"
+    "static/js/main.7b1b58d7.chunk.js"
   ]
 }

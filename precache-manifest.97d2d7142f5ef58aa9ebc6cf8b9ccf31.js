@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e7d3b78e29efec7f0c786db770a85b90",
+    "revision": "738c1ac0d0a441f2b37fa0e02ffb9847",
     "url": "/improv-write-or-die/index.html"
   },
   {
-    "revision": "e70a5a4bfa88600a0531",
+    "revision": "5349a0d138fba15084f2",
     "url": "/improv-write-or-die/static/css/main.54236a13.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/improv-write-or-die/static/js/2.7a600327.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e70a5a4bfa88600a0531",
-    "url": "/improv-write-or-die/static/js/main.60494788.chunk.js"
+    "revision": "5349a0d138fba15084f2",
+    "url": "/improv-write-or-die/static/js/main.7b1b58d7.chunk.js"
   },
   {
     "revision": "d0b1b19a033b51a8ab14",
